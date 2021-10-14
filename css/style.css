@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-clr: #22bdff;
+    --secondary-clr: #006838;
+    --dark-clr: #2b2b2b;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    color: var(--dark-clr);
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn{
+    padding: 1em 1.5em;
+    background-color: var(--primary-clr);
+    border-radius: .2em;
+    width: max-content;
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+ 
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li{
+    color: var(--dark-clr);
+    background-color: #fff;
+    padding: 1em;
+}
+
+.products{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 4em;
+    right: 12em;
+}
+
+main{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    padding: 5em 1.5em;
+}
+
+main h1{
+    margin-bottom: 1em;
+    color: var(--primary-clr);
+}
+
+main p {
+    color: var(--dark-clr);
+}
+
+main img{
+    width: 35%;
+}
+
+
+
+
+
+
+
+section {
+    width: 100%;
+    height: 50vh;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/ss1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+
+footer{
+    background-image: url(/images/cont-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1.5em;
+}
+
+footer h2{
+    margin-bottom: 1em;
+}
+
+footer p{
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+footer img{
+    width: 25px;
+    height: 25px;
+}
+
+footer ul li{
+    margin-bottom: .5em;
+}
+
+.copyright{
+    background-color: var(--dark-clr);
+    color: white;
+    padding: .5em 1.5em;
+    font-size: .8rem;
+}
+
+.copyright a{
+    color: #90f;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
