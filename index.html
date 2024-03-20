@@ -37,5 +37,154 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
     <script defer src="assets/scripts/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="nav" aria-label="Primary Navigation">
+      <div class="container nav__container">
+        <a href="index.html">
+          <img
+            class="nav__logo"
+            src="assets/images/neotek.png"
+            alt="Neotek Systems logo"
+          />
+        </a>
+
+        <button class="btn nav__btn-toggle">
+          <img src="assets/images/icons/menu.svg" alt="Menu Icon" />
+        </button>
+
+        <ul class="nav__list" aria-expanded="false">
+          <li class="nav__list-item"><a href="index.html">Почетна</a></li>
+          <div class="nav__list-nested">
+            <button
+              class="nav__list-item nav__list-item--icon nav__list-item--products"
+            >
+              Продукти
+            </button>
+            <ul class="nav__list-nested-list" aria-expanded="false">
+              <li class="nav__list-nested__item">
+                <a href="powder-colors.html">Прашкасти Бои</a>
+              </li>
+              <li class="nav__list-nested__item">
+                <a href="hotmelt.html">Хотмелт</a>
+              </li>
+              <li class="nav__list-nested__item">
+                <a href="painter-guns.html">Фарбари и Пиштоли</a>
+              </li>
+              <li class="nav__list-nested__item">
+                <a href="other-products.html">Останати Производи</a>
+              </li>
+            </ul>
+          </div>
+          <li class="nav__list-item"><a href="about.html">За Нас</a></li>
+          <li class="nav__list-item"><a href="#footer">Контакт</a></li>
+          <div class="nav__list-nested">
+            <button
+              class="nav__list-item nav__list-item--icon nav__list-item--language-mk"
+              href="#"
+            >
+              МК
+            </button>
+
+            <ul class="nav__list-nested-list" aria-expanded="false">
+              <li class="nav__list-nested__item">
+                <a
+                  class="nav__list-item--language-sq nav__list-item--icon"
+                  href="sq/index.html"
+                  >SQ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <main></main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <div class="container footer__content-container">
+          <div class="footer__content-contact">
+            <h3 class="h4">Контакт</h3>
+
+            <ul class="footer__content-contact-list">
+              <li class="footer__content-contact-list-item">
+                <img
+                  src="assets/images/icons/location.svg"
+                  alt="Location Icon"
+                />
+                ул. Гоце Делчев бр.56, 2400 Струмица, Северна Македонија
+              </li>
+              <li class="footer__content-contact-list-item">
+                <img src="assets/images/icons/clock.svg" alt="Clock Icon" />
+                Пон-Пет: 09.00-17.00 Саб: 09.00-14.00
+              </li>
+              <li class="footer__content-contact-list-item">
+                <img src="assets/images/icons/phone.svg" alt="Phone Icon" />
+                <a href="tel:075344428">075 344 428</a>
+              </li>
+              <li class="footer__content-contact-list-item">
+                <img src="assets/images/icons/phone.svg" alt="Phone Icon" />
+                <a href="tel:034552233">034 55 22 33</a>
+              </li>
+
+              <li class="footer__content-contact-list-item">
+                <img src="assets/images/icons/mail.svg" alt="Mail Icon" />
+                <a href="mailto:info@neotek.mk">info@neotek.mk</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content-location">
+            <h3 class="h4">Локација</h3>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.0840902167733!2d22.653394214951835!3d41.437397000857146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a9fe661e78ebff%3A0x330691cce20ad3c8!2z0J3QtdC-0YLQtdC6INCh0LjRgdGC0LXQvNGB!5e0!3m2!1smk!2smk!4v1592405867208!5m2!1smk!2smk"
+              width="220px"
+              height="220px"
+              frameborder="0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              class="footer__content-map"
+            ></iframe>
+          </div>
+          <div class="footer__content-navigation">
+            <h3 class="h4">Навигација</h3>
+
+            <nav aria-label="Footer Navigation">
+              <ul class="footer__content-navigation-list">
+                <li class="footer__content-navigation-list-item">
+                  <a href="index.html">Почетна</a>
+                </li>
+                <li class="footer__content-navigation-list-item">
+                  <a href="powder-colors.html">Прашкасти Бои</a>
+                </li>
+                <li class="footer__content-navigation-list-item">
+                  <a href="hotmelt.html">Хотмелт</a>
+                </li>
+                <li class="footer__content-navigation-list-item">
+                  <a href="painter-guns.html">Фарбари и Пиштоли</a>
+                </li>
+                <li class="footer__content-navigation-list-item">
+                  <a href="about.html">За Нас</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container footer__copyright-container">
+          <p class="fs-body-m">
+            Copyright &copy; <span class="footer__year"></span> Neotek Systems.
+            All rights reserved.
+          </p>
+          <p class="fs-body-m">
+            Website by
+            <a href="https://dimitark.com" target="_blank">Strax Designs</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
