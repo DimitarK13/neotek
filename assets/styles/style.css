@@ -500,3 +500,28 @@ h5,
     padding-block: 60px;
   }
 }
+
+.s-content {
+  padding-block: 30px;
+}
+
+.s-content__columns {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.s-content__columns > * {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .s-content {
+    padding-block: 60px;
+  }
+
+  .s-content__columns {
+    flex-direction: row;
+  }
+}
