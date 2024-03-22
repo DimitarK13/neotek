@@ -190,11 +190,13 @@ h5,
 .btn--primary:hover,
 .btn--primary:focus {
   background-color: var(--primary-clr-800);
+  color: var(--neutral-clr-100);
 }
 
 .btn--underline {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  color: var(--primary-clr-800);
 
   transition: color 175ms ease-in-out;
 }
@@ -437,5 +439,46 @@ h5,
 
   .footer__content-container {
     margin-bottom: 80px;
+  }
+}
+
+.section-header {
+  padding-block: 24px;
+  background-color: var(--primary-clr-100);
+}
+
+.section-header--l {
+  padding-block: 40px;
+}
+
+.section-header__text {
+  margin-top: 16px;
+  max-width: 760px;
+}
+
+.section-header__buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    text-align: center;
+    padding-block: 40px;
+  }
+
+  .section-header--l {
+    padding-block: 80px;
+  }
+
+  .section-header__text {
+    margin-inline: auto;
+  }
+
+  .section-header__buttons {
+    justify-content: center;
   }
 }
