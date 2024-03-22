@@ -33,3 +33,11 @@ const closeNav = () => {
   navList.setAttribute('aria-expanded', 'false');
   navToggleIcon.src = 'assets/images/icons/menu.svg';
 };
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  allowTouchMove: false,
+});
