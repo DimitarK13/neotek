@@ -515,6 +515,10 @@ h5,
   padding-block: 30px;
 }
 
+.s-content--one-column .s-content__paragraph {
+  margin-bottom: 32px;
+}
+
 .s-content__columns {
   margin-top: 16px;
   display: flex;
