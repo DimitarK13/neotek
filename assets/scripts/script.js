@@ -34,10 +34,21 @@ const closeNav = () => {
   navToggleIcon.src = 'assets/images/icons/menu.svg';
 };
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper__images', {
   loop: true,
   autoplay: {
     delay: 3000,
   },
   allowTouchMove: false,
+});
+
+const swiperSlider = new Swiper('.swiper__slider', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 10000,
+  },
 });
