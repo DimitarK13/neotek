@@ -756,3 +756,17 @@ h5,
     font-size: 28px;
   }
 }
+
+.s-certificates {
+  padding-block: 30px;
+}
+
+.s-certificates__image {
+  border-radius: var(--border-radius-200);
+}
+
+@media (min-width: 768px) {
+  .s-certificates {
+    padding-block: 60px;
+  }
+}

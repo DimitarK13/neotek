@@ -52,3 +52,21 @@ const swiperSlider = new Swiper('.swiper__slider', {
     delay: 10000,
   },
 });
+
+const swiperCertificates = new Swiper('.swiper__certificates', {
+  loop: true,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2200,
+  },
+  breakpoints: {
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 26,
+    },
+  },
+});
