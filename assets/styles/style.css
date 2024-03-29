@@ -155,6 +155,10 @@ h5,
   font-size: var(--fs-body-m);
 }
 
+.fw-bold {
+  font-weight: var(--font-weight-bold);
+}
+
 .bg-primary {
   background-color: var(--primary-clr-400);
   color: var(--neutral-clr-100);
@@ -684,6 +688,10 @@ h5,
   display: flex !important;
   flex-direction: column;
   gap: 32px;
+}
+
+.s-slider__slide-btn {
+  margin-top: 40px;
 }
 
 .s-slider__slide-content {
