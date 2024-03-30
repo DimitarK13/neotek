@@ -882,7 +882,6 @@ h5,
 
 .s-video {
   padding-block: 30px;
-  text-align: center;
 }
 
 .s-video.s-video--two-columns {
@@ -921,6 +920,7 @@ h5,
 @media (min-width: 768px) {
   .s-video {
     padding-block: 60px;
+    text-align: center;
   }
 
   .s-video__columns {
