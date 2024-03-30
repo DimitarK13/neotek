@@ -1,3 +1,9 @@
+'use strict';
+
+const currentURL = window.location.href;
+
+const regex = /\/sq\//;
+
 const footerYear = document.querySelector('.footer__year');
 footerYear.textContent = new Date().getFullYear();
 
@@ -26,12 +32,16 @@ navToggle.addEventListener('click', () => {
 
 const openNav = () => {
   navList.setAttribute('aria-expanded', 'true');
-  navToggleIcon.src = 'assets/images/icons/close.svg';
+  navToggleIcon.src = regex.test(currentURL)
+    ? '../assets/images/icons/close.svg'
+    : 'assets/images/icons/close.svg';
 };
 
 const closeNav = () => {
   navList.setAttribute('aria-expanded', 'false');
-  navToggleIcon.src = 'assets/images/icons/menu.svg';
+  navToggleIcon.src = regex.test(currentURL)
+    ? '../assets/images/icons/menu.svg'
+    : 'assets/images/icons/menu.svg';
 
   document.querySelectorAll('.nav__list-nested-list').forEach((list) => {
     list.setAttribute('aria-expanded', 'false');
@@ -82,7 +92,9 @@ if (showcaseBtns && showcaseImg) {
   showcaseBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       const imgName = btn.dataset.image;
-      showcaseImg.setAttribute('src', `assets/images/other/${imgName}.jpg`);
+      showcaseImg.src = regex.test(currentURL)
+        ? `../assets/images/other/${imgName}.jpg`
+        : `assets/images/other/${imgName}.jpg`;
 
       showcaseBtns.forEach((btn) => btn.classList.remove('active'));
 
