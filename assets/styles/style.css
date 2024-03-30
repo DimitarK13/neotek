@@ -432,7 +432,7 @@ h5,
 }
 
 .nav__list-nested__item a {
-  text-wrap: nowrap;
+  white-space: nowrap;
   width: max-content;
 }
 

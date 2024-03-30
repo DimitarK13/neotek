@@ -32,6 +32,10 @@ const openNav = () => {
 const closeNav = () => {
   navList.setAttribute('aria-expanded', 'false');
   navToggleIcon.src = 'assets/images/icons/menu.svg';
+
+  document.querySelectorAll('.nav__list-nested-list').forEach((list) => {
+    list.setAttribute('aria-expanded', 'false');
+  });
 };
 
 const swiper = new Swiper('.swiper__images', {
