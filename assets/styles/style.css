@@ -703,6 +703,10 @@ h5,
   border-radius: var(--border-radius-200);
 }
 
+.s-slider__slide-image--gutter {
+  max-width: 1000px;
+}
+
 .s-slider__slide-title {
   margin-bottom: 16px;
 }
