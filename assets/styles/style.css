@@ -290,6 +290,12 @@ h5,
     justify-content: center;
     gap: 60px;
   }
+
+  .nav--products {
+    position: sticky;
+    z-index: 999;
+    top: 70px;
+  }
 }
 
 .nav--products__list a,
@@ -427,6 +433,7 @@ h5,
 
 .nav__list-nested__item a {
   text-wrap: nowrap;
+  width: max-content;
 }
 
 /* FOOTER */
