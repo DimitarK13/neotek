@@ -70,3 +70,19 @@ const swiperCertificates = new Swiper('.swiper__certificates', {
     },
   },
 });
+
+const showcaseBtns = document.querySelectorAll('.s-showcase__grid-content-btn');
+const showcaseImg = document.querySelector('.s-showcase__grid-image__img');
+
+if (showcaseBtns && showcaseImg) {
+  showcaseBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const imgName = btn.dataset.image;
+      showcaseImg.setAttribute('src', `assets/images/other/${imgName}.jpg`);
+
+      showcaseBtns.forEach((btn) => btn.classList.remove('active'));
+
+      btn.classList.add('active');
+    });
+  });
+}
