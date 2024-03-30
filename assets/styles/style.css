@@ -690,6 +690,10 @@ h5,
   gap: 32px;
 }
 
+.s-slider__title {
+  margin-bottom: 24px;
+}
+
 .s-slider__slide-btn {
   margin-top: 40px;
 }
@@ -714,6 +718,10 @@ h5,
 @media (min-width: 768px) {
   .s-slider {
     padding: 60px;
+  }
+
+  .s-slider__title {
+    text-align: center;
   }
 
   .s-slider__slide {
