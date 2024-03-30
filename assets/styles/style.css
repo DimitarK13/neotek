@@ -1043,6 +1043,10 @@ h5,
   border-radius: var(--border-radius-200);
 }
 
+.s-showcase__grid-image__img.img--pvc {
+  width: 240px;
+}
+
 @media (min-width: 768px) {
   .s-showcase {
     padding-block: 60px;
