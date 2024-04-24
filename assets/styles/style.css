@@ -613,6 +613,18 @@ h5,
   padding: 24px;
 }
 
+.s-features__cards-card__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s-features__cards-card__link img {
+  width: 100px;
+}
+
 .s-features__cards-card.bg-dark .s-features__cards-card__title,
 .s-features__cards-card.bg-primary .s-features__cards-card__title {
   color: var(--neutral-clr-100);
