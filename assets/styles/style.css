@@ -1081,3 +1081,7 @@ h5,
     width: 300px;
   }
 }
+
+.swiper__images .swiper-wrapper {
+  align-items: center;
+}
